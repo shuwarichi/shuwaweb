@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuwa Lichi⋆｡°✩</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site">
+
+    <!-- HEADER -->
+    <header class="top">
+        <div class="cream-soda">
+            <img src="https://64.media.tumblr.com/9d1a84b0613785e908378098e2c01e4c/b0d7585003e59464-a0/s250x400/a41a2ce7b4a655e7fb2dbde166babf67d9c143e7.gifv" alt="Logo" class="cream-soda-icon">
+            <span>しゅわりち</span>
+        </div>
+    </header>
+    
+    <div class="interface">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-label">CHANNELS</div>
+
+            <!-- 1. HOME -->
+            <button class="side-channel active" onclick="openChannel('home', this)">
+                <div class="side-icon">
+                    <img src="https://64.media.tumblr.com/f65d616cb065a01cd473b5faaaa12406/b0d7585003e59464-f9/s250x400/2a29596c2eaee20f96006e866ee36532d484b0b3.gifv" alt="Home" class="channel-icon-img">
+                </div>
+                <div class="side-name">HOME</div>
+            </button>
+        
+            <!-- 2. ABOUT ME -->
+            <button class="side-channel" onclick="openChannel('about', this)">
+                <div class="side-icon">
+                    <img src="https://64.media.tumblr.com/324cc38e13d21ca0cf9d4119289c0d42/b0d7585003e59464-7a/s250x400/3b27d12dd6c64a08562b4902a0b6c2c9113b1b4e.gifv" alt="About" class="channel-icon-img">
+                </div>
+                <div class="side-name">ABOUT ME</div>
+            </button>
+
+            <!-- 3. CONTACT -->
+            <button class="side-channel" onclick="openChannel('contact', this)">
+                <div class="side-icon">
+                    <img src="https://64.media.tumblr.com/f65d616cb065a01cd473b5faaaa12406/b0d7585003e59464-f9/s250x400/2a29596c2eaee20f96006e866ee36532d484b0b3.gifv" alt="Contact" class="channel-icon-img">
+                </div>
+                <div class="side-name">CONTACT</div>
+            </button>
+
+            <!-- 4. ADOPTABLES -->
+            <button class="side-channel" onclick="openChannel('adoptables', this)">
+                <div class="side-icon">
+                    <img src="https://64.media.tumblr.com/324cc38e13d21ca0cf9d4119289c0d42/b0d7585003e59464-7a/s250x400/3b27d12dd6c64a08562b4902a0b6c2c9113b1b4e.gifv" alt="Adoptables" class="channel-icon-img">
+                </div>
+                <div class="side-name">ADOPTABLES</div>
+            </button>
+
+            <!-- 5. COMMISSIONS -->
+            <button class="side-channel" onclick="openChannel('commissions', this)">
+                <div class="side-icon">
+                    <img src="https://64.media.tumblr.com/f65d616cb065a01cd473b5faaaa12406/b0d7585003e59464-f9/s250x400/2a29596c2eaee20f96006e866ee36532d484b0b3.gifv" alt="Commissions" class="channel-icon-img">
+                </div>
+                <div class="side-name">COMMISSIONS</div>
+            </button>
+
+            <!-- 6. TOS -->
+            <button class="side-channel" onclick="openChannel('tos', this)">
+                <div class="side-icon">
+                    <img src="https://64.media.tumblr.com/324cc38e13d21ca0cf9d4119289c0d42/b0d7585003e59464-7a/s250x400/3b27d12dd6c64a08562b4902a0b6c2c9113b1b4e.gifv" alt="TOS" class="channel-icon-img">
+                </div>
+                <div class="side-name">TOS</div>
+            </button>
+
+            <div class="sidebar-bottom"></div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="content">
+            <div class="bubble-container" aria-hidden="true"></div>
+
+            <!-- 1. HOME CHANNEL -->
+            <section class="page active" id="home">
+                <!-- WELCOME BOX -->
+                <div class="welcome">
+                    <div class="welcome-text">
+                        <div class="tiny-title">WELCOME</div>
+                        <h1>やほ〜！</h1>
+                        <p>Welcome to my personal webpage!!</p>
+                        <p>Select a channel on the left to look around</p>
+                    </div>
+                    
+                    <div class="character-gif">
+                        <img src="https://media.discordapp.net/attachments/1526350919967703171/1536006084693594233/yesomgomg.gif?ex=6a79d4a4&is=6a788324&hm=70d30ac55a259aacdc9b5ddbe5dc0b3a12bc933398d11d3e23e44adacedb09b7&=&width=1024&height=1024" alt="Character GIF">
+                    </div>
+                </div>
+                
+                <!-- HOME BUTTONS -->
+                <div class="home-buttons">
+                    <button class="home-button" onclick="openChannel('commissions', this)">
+                        <div class="home-button-icon">
+                            <img src="images/goldfish.png" alt="Commissions Icon">
+                        </div>
+                        <div class="home-button-text">
+                            <b>COMMISSIONS</b>
+                            <span>VIEW COMMISSION INFO</span>
+                        </div>
+                        <div class="home-button-arrow">&gt;</div>
+                    </button>
+                    
+                    <button class="home-button" onclick="openChannel('adoptables', this)">
+                        <div class="home-button-icon">
+                            <img src="images/shark.png" alt="Adoptables Icon">
+                        </div>
+                        <div class="home-button-text">
+                            <b>ADOPTABLES</b>
+                            <span>VIEW ALL AVAILABLE DESIGNS</span>
+                        </div>
+                        <div class="home-button-arrow">&gt;</div>
+                    </button>
+                </div>
+
+                <!-- LOWER PANELS ROW -->
+                <div class="home-panels-row">
+                    <!-- LEFT: NEWS -->
+                    <div class="home-panel-col">
+                        <div class="home-note">
+                            <div class="panel-title">NEWS</div>
+                            <div class="home-note-content">
+                                <p><strong>10-08-26 </strong>Made website public</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: SHOWCASE -->
+                    <div class="home-panel-col">
+                        <div class="adoptable-showcase">
+                            <div class="panel-title">AVAILABLE DESIGNS</div>
+                            <div class="showcase-viewport">
+                                <button class="showcase-arrow arrow-left" onclick="changeSlide(-1)">&lt;</button>
+                                <button class="showcase-arrow arrow-right" onclick="changeSlide(1)">&gt;</button>
+
+                                <div class="adoptable-slide active">
+                                    <img src="https://media.discordapp.net/attachments/1526350919967703171/1536489028403208303/Untitled_Artwork.png?ex=6a7b966a&is=6a7a44ea&hm=86899a7f17bbec630ebd2f76729bc86ace5bb6312fb5740c3f9d8d3637951c7c&=&format=webp&quality=lossless&width=1024&height=960" alt="Design 1">
+                                    <span class="slide-label">OPEN • MANGO ICEPOP</span>
+                                </div>
+                                <div class="adoptable-slide">
+                                    <img src="https://via.placeholder.com/400x400/fff0f2/e1315a?text=Design+%232" alt="Design 2">
+                                    <span class="slide-label">PLACEHOLDER</span>
+                                </div>
+                                <div class="adoptable-slide">
+                                    <img src="https://via.placeholder.com/400x400/fef9f4/991d3d?text=Design+%233" alt="Design 3">
+                                    <span class="slide-label">PLACEHOLDER</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. ABOUT ME CHANNEL -->
+            <section class="page" id="about">
+                <div class="content-header">
+                    <div>
+                        <div class="tiny-title">CHANNEL 01</div>
+                        <h1>ABOUT ME</h1>
+                    </div>
+                </div>
+                
+                <div class="old-panel">
+                    <div class="panel-title">WHO AM I?</div>
+                    <div class="panel-content">
+                        <div class="avatar">
+                            <div class="avatar-head"></div>
+                            <div class="avatar-body"></div>
+                        </div>
+                        <div>
+                            <p>Hi! I'm <b>Lichi, or just Leech</b>.</p>
+                            <p>I'm an artist, a C++, HTML and CSS programmer and also an upcoming VTuber.</p>
+                            <p>I'm 17 years old, therefore I'm still studying. So my commissions may not be open frequently but I will try to create new adoptables often because I'm very passionate about character design.</p>
+                            <p>I speak native level English and Dutch, I am actively studying Japanese.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. CONTACT CHANNEL -->
+            <section class="page" id="contact">
+                <div class="content-header">
+                    <div>
+                        <div class="tiny-title">CHANNEL 02</div>
+                        <h1>CONTACT & LINKS</h1>
+                    </div>
+                </div>
+                
+                <div class="old-panel">
+                    <div class="panel-title">FOR DMING ME</div>
+                    <a href="https://discord.gg/HSZ2PKJd" class="link-row">
+                        <div class="link-icon">
+                            <img src="https://64.media.tumblr.com/0b74f15511d58d5b660a364059702459/d739bbd594ec0b26-36/s100x200/5a406cb988af736424e9c443ad9f787209d384a3.gifv" alt="D">
+                        </div>
+                        <div>
+                            <b>Discord</b>
+                            <p>@shuwalichi</p>
+                        </div>
+                        <span>&gt;</span>
+                    </a>
+                    <a href="https://x.com/shuwalichi" class="link-row">
+                        <div class="link-icon">
+                            <img src="https://64.media.tumblr.com/0b74f15511d58d5b660a364059702459/d739bbd594ec0b26-36/s100x200/5a406cb988af736424e9c443ad9f787209d384a3.gifv" alt="?">
+                        </div>
+                        <div>
+                            <b>Twitter/X</b>
+                            <p>@shuwalichi</p>
+                        </div>
+                        <span>&gt;</span>
+
+                <div class="old-panel">
+                    <div class="panel-title">OTHER</div>
+                    <a href="#" class="link-row">
+                        <div class="link-icon">W</div>
+                        <div>
+                            <b>Toyhouse</b>
+                            <p>example</p>
+                        </div>
+                        <span>&gt;</span>
+                    </a>
+                    <a href="#" class="link-row">
+                        <div class="link-icon">G</div>
+                        <div>
+                            <b>GitHub</b>
+                            <p>github.com/username</p>
+                        </div>
+                        <span>&gt;</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 4. ADOPTABLES CHANNEL -->
+            <section class="page" id="adoptables">
+                <div class="content-header">
+                    <div>
+                        <div class="tiny-title">CHANNEL 03</div>
+                        <h1>ADOPTABLES</h1>
+                    </div>
+                </div>
+                
+                <div class="old-panel">
+                    <div class="panel-title">AVAILABLE CHARACTER DESIGNS</div>
+                    
+                    <div class="adoptable-grid">
+                        <!-- ADOPTABLE CARD 1 -->
+                        <div class="adoptable-card">
+                            <div class="adoptable-card-img">
+                                <img src="https://media.discordapp.net/attachments/1526350919967703171/1536489028403208303/Untitled_Artwork.png?ex=6a7b966a&is=6a7a44ea&hm=86899a7f17bbec630ebd2f76729bc86ace5bb6312fb5740c3f9d8d3637951c7c&=&format=webp&quality=lossless&width=1024&height=960" alt="Mango Icepop">
+                            </div>
+                            <div class="adoptable-card-title">01 • MANGO ICEPOP</div>
+                            <div class="adoptable-card-price">$25 USD</div>
+                            <button class="retro-claim-btn" onclick="openAdoptableModal('01 • MANGO ICEPOP', '$25 USD', 'https://media.discordapp.net/attachments/1526350919967703171/1536489028403208303/Untitled_Artwork.png?ex=6a7b966a&is=6a7a44ea&hm=86899a7f17bbec630ebd2f76729bc86ace5bb6312fb5740c3f9d8d3637951c7c&=&format=webp&quality=lossless&width=1024&height=960', 'Includes full resolution artwork file + full commercial usage rights.')">VIEW DETAILS</button>
+                        </div>
+
+                        <!-- ADOPTABLE CARD 2 -->
+                        <div class="adoptable-card">
+                            <div class="adoptable-card-img">
+                                <img src="https://via.placeholder.com/400x400/fff0f2/e1315a?text=Soda+Cat" alt="Soda Cat">
+                            </div>
+                            <div class="adoptable-card-title">02 • SODA CAT</div>
+                            <div class="adoptable-card-price">$30 USD</div>
+                            <button class="retro-claim-btn" onclick="openAdoptableModal('02 • SODA CAT', '$30 USD', 'https://via.placeholder.com/400x400/fff0f2/e1315a?text=Soda+Cat', 'Cute soda-themed character design.')">VIEW DETAILS</button>
+                        </div>
+
+                        <!-- ADOPTABLE CARD 3 -->
+                        <div class="adoptable-card">
+                            <div class="adoptable-card-img">
+                                <img src="https://via.placeholder.com/400x400/fef9f4/991d3d?text=Angel+Bear" alt="Angel Bear">
+                            </div>
+                            <div class="adoptable-card-title">03 • ANGEL BEAR</div>
+                            <div class="adoptable-card-price">$20 USD</div>
+                            <button class="retro-claim-btn" onclick="openAdoptableModal('03 • ANGEL BEAR', '$20 USD', 'https://via.placeholder.com/400x400/fef9f4/991d3d?text=Angel+Bear', 'Pending adoption confirmation.')">VIEW DETAILS</button>
+                        </div>
+
+                        <!-- ADOPTABLE CARD 4 -->
+                        <div class="adoptable-card">
+                            <div class="adoptable-card-img">
+                                <img src="https://via.placeholder.com/400x400/e6e6e8/666666?text=Star+Devil" alt="Star Devil">
+                            </div>
+                            <div class="adoptable-card-title">04 • STAR DEVIL</div>
+                            <div class="adoptable-card-price">$25 USD</div>
+                            <button class="retro-claim-btn" onclick="openAdoptableModal('04 • STAR DEVIL', '$25 USD', 'https://via.placeholder.com/400x400/e6e6e8/666666?text=Star+Devil', 'Adopted by user.')">VIEW DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. COMMISSIONS CHANNEL -->
+            <section class="page" id="commissions">
+                <div class="content-header">
+                    <div>
+                        <div class="tiny-title">CHANNEL 04</div>
+                        <h1>COMMISSIONS</h1>
+                    </div>
+                </div>
+
+                <div class="old-panel">
+                    <div class="panel-title">COMMISSION STATUS</div>
+                    <div class="panel-content closed-status-box">
+                        <span class="status-badge closed-badge">CLOSED</span>
+                        <div>
+                            <p><b>Commissions are currently CLOSED!</b></p>
+                            <p>Thank you for your interest! Commissions are currently closed while I focus on school and studies. Please check back later or check my social media links for future openings.</p>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- FIXED: Closed commissions section -->
+
+            <!-- 6. TOS CHANNEL -->
+<section class="page" id="tos">
+    <div class="content-header">
+        <div>
+            <div class="tiny-title">CHANNEL 05</div>
+            <h1>TERMS OF SERVICE</h1>
+        </div>
+    </div>
+
+    <!-- CENTERED SCROLLABLE TOS BOX -->
+    <div class="tos-wrapper">
+        <div class="old-panel tos-panel">
+            <div class="panel-title tos-header">
+                <span>TERMS & CONDITIONS</span>
+            </div>
+
+            <!-- SCROLLABLE BODY -->
+            <div class="tos-scroll-body">
+                
+                <div class="tos-section">
+                    <h3>1. GENERAL & PAYMENT TERMS</h3>
+                    <ul class="retro-list">
+                        <li><b>Payment Method:</b> Payments are accepted via <b>PayPal</b> only.</li>
+                        <li><b>Upfront Payment:</b> 50% of the full payment is required upfront before work starts. Remaining 50% paid after approved sketch.</li>
+                        <li><b>Right to Refuse:</b> I reserve the right to decline any commission or adoptable claim at my discretion.</li>
+                    </ul>
+                </div>
+
+                <div class="tos-section">
+                    <h3>2. REFUND POLICY</h3>
+                    <ul class="retro-list">
+                        <li><b>Artist Cancellation:</b> If I cancel your commission before or during work, you will receive a 100% full refund.</li>
+                        <li><b>Client Cancellation:</b> Full refund if requested before work starts. 50% refund during the sketch phase.</li>
+                        <li><b>No Refunds:</b> No refunds will be given once lineart/coloring has started or after un-watermarked adoptable files are delivered.</li>
+                    </ul>
+                </div>
+
+                <div class="tos-section">
+                    <h3>3. INTELLECTUAL PROPERTY & USAGE</h3>
+                    <ul class="retro-list">
+                        <li><b>Personal Use:</b> Commissions and adoptables are for personal use (profile pics, banners, VTuber profiles, personal prints).</li>
+                        <li><b>Commercial Rights:</b> Merch, branding, or monetization requires a commercial fee of €10.</li>
+                        <li><b>Credit:</b> You must credit me (<b>Shuwa Lichi</b>) when posting or displaying the art/design.</li>
+                        <li><b>AI / NFT Prohibition:</b> Strictly <b>NO</b> uploading my artwork/designs into AI generators, datasets, or minting as NFTs.</li>
+                    </ul>
+                </div>
+
+                <div class="tos-section">
+                    <h3>4. ADOPTABLE SPECIFIC RULES</h3>
+                    <ul class="retro-list">
+                        <li><b>Holds:</b> Holds are allowed for up to <b>48 hours</b> maximum. If payment is not made, the design goes back up for sale.</li>
+                        <li><b>Reselling:</b> You may freely resell the character to your liking.</li>
+                        <li><b>Trading & Gifting:</b> You may gift or trade the character to your liking.</li>
+                        <li><b>Redesigning:</b> You may change the character design to your liking.</li>
+                    </ul>
+                </div>
+
+                <div class="tos-section">
+                    <h3>By purchasing anything from me, this means you have properly read, understand and agree to the terms listed above.</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-content">
+            <span>Developed by Shuwa Lichi</span>
+            <span>Best viewed on PC</span>
+        </div>
+    </footer>
+</div>
+
+<div id="wiiModal" class="retro-modal-overlay" onclick="closeAdoptableModal(event)">
+    <div class="retro-modal-window">
+        <div class="retro-modal-header">
+            <span id="modalTitle">DESIGN NAME</span>
+            <button class="close-btn" onclick="closeAdoptableModalDirect()">✕</button>
+        </div>
+        <div class="retro-modal-body">
+            <div class="retro-modal-img">
+                <img id="modalImage" src="" alt="Adoptable Preview">
+            </div>
+            <div class="retro-modal-details">
+                <div>
+                    <div id="modalPrice" class="modal-price-tag">$00 USD</div>
+                    <p id="modalDesc">Description details go here...</p>
+                </div>
+                <a href="https://discord.com" target="_blank" class="modal-claim-link">✦ CLAIM / DM TO ADOPT ✦</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openChannel(channel, button) {
+    const pages = document.querySelectorAll(".page");
+    pages.forEach(function(page) {
+        page.classList.remove("active");
+    });
+
+    const buttons = document.querySelectorAll(".side-channel");
+    buttons.forEach(function(item) {
+        item.classList.remove("active");
+    });
+
+    document.getElementById(channel).classList.add("active");
+    button.classList.add("active");
+}
+
+/* BUBBLES */
+const bubbleContainer = document.querySelector(".bubble-container");
+
+function createBubble() {
+    const bubble = document.createElement("div");
+    bubble.classList.add("bubble");
+
+    const size = Math.random() * 22 + 4;
+    const left = Math.random() * 100;
+
+    bubble.style.width = size + "px";
+    bubble.style.height = size + "px";
+    bubble.style.left = left + "%";
+
+    const duration = Math.random() * 18 + 12;
+    bubble.style.setProperty("--duration", duration + "s");
+
+    const delay = Math.random() * -30;
+    bubble.style.setProperty("--delay", delay + "s");
+
+    const opacity = Math.random() * 0.35 + 0.25;
+    bubble.style.setProperty("--opacity", opacity);
+
+    const scale = Math.random() * 0.45 + 0.8;
+    bubble.style.setProperty("--scale", scale);
+
+    const drift1 = (Math.random() * 100 - 50) + "px";
+    const drift2 = (Math.random() * 160 - 80) + "px";
+    const drift3 = (Math.random() * 200 - 100) + "px";
+
+    bubble.style.setProperty("--drift1", drift1);
+    bubble.style.setProperty("--drift2", drift2);
+    bubble.style.setProperty("--drift3", drift3);
+
+    bubbleContainer.appendChild(bubble);
+
+    setTimeout(() => bubble.remove(), (duration + 2) * 1000);
+}
+
+function startBubbles() {
+    function nextBubble() {
+        createBubble();
+        const next = Math.random() * 450 + 120;
+        setTimeout(nextBubble, next);
+    }
+    nextBubble();
+}
+startBubbles();
+
+/* ADOPTABLE SHOWCASE (Auto & Manual Arrows) */
+let currentSlide = 0;
+let slideInterval = null;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll(".adoptable-slide");
+    if (slides.length === 0) return;
+
+    slides.forEach(slide => slide.classList.remove("active"));
+
+    currentSlide = (index + slides.length) % slides.length;
+    slides[currentSlide].classList.add("active");
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+    resetSlideTimer();
+}
+
+function startAdoptableShowcase() {
+    slideInterval = setInterval(() => {
+        showSlide(currentSlide + 1);
+    }, 4000);
+}
+
+function resetSlideTimer() {
+    clearInterval(slideInterval);
+    startAdoptableShowcase();
+}
+
+startAdoptableShowcase();
+
+/* ADOPTABLE MODAL FUNCTIONS */
+function openAdoptableModal(title, price, imageSrc, description) {
+    document.getElementById("modalTitle").textContent = title;
+    document.getElementById("modalPrice").textContent = price;
+    document.getElementById("modalImage").src = imageSrc;
+    document.getElementById("modalDesc").textContent = description;
+
+    document.getElementById("wiiModal").style.display = "flex";
+}
+
+function closeAdoptableModalDirect() {
+    document.getElementById("wiiModal").style.display = "none";
+}
+
+function closeAdoptableModal(event) {
+    if (event.target.id === "wiiModal") {
+        document.getElementById("wiiModal").style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
